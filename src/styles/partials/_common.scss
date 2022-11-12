@@ -1,0 +1,74 @@
+.main {
+  background-color: $greyColor;
+  min-height: 100%;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: rem(26);
+  line-height: math.div(39, 26);
+}
+
+.h2 {
+  font-size: rem(22);
+  line-height: math.div(33, 22);
+}
+
+.h3 {
+  font-weight: 500;
+  font-size: rem(18);
+  line-height: math.div(27, 18);
+}
+
+.text,
+.button {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: math.div(24, 16);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+  background-color: $fioletColor;
+  color: $whiteColor;
+  @include br16;
+
+  &:hover {
+    background-color: #2C1A9A;
+  }
+
+  &:active {
+    background: #1F1368;
+  }
+}
+
+@media (max-width:$mobile) {
+  .h1 {
+    font-size: rem(24);
+    line-height: math.div(36, 24);
+  }
+
+  .h2 {
+    font-size: rem(20);
+    line-height: math.div(30, 20);
+  }
+
+  .h3 {
+    font-size: rem(16);
+    line-height: math.div(24, 16);
+  }
+
+  .text,
+  .button {
+    font-size: rem(14);
+    line-height: math.div(21, 14);
+  }
+}

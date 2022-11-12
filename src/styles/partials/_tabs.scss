@@ -1,0 +1,58 @@
+.tabs {
+
+  &__navigation {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: 500;
+    padding: rem(20) rem(24);
+    background-color: $darkGrey;
+    @include border-radius;
+
+    &._tab-active {
+      background-color: $whiteColor;
+      color: $fioletColor;
+      @include border-radius;
+    }
+  }
+
+  &__body {
+    background: $whiteColor;
+    border-radius: 0 20px 20px 20px;
+  }
+}
+
+@media (max-width:$tablet) {
+  .tabs {
+    &__body {
+      border-radius: 0 0 20px 20px;
+      margin-top: -20px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      position: relative;
+      width: 100%;
+      text-align: left;
+      border-radius: 20px;
+      background-color: $whiteColor;
+
+      &._tab-active {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+
+      &::after {
+        content: url('../img/arrow.svg');
+        position: absolute;
+        right: 25px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

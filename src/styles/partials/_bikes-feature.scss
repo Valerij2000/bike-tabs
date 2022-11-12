@@ -1,0 +1,134 @@
+.bikes-feature {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: $greyColor;
+    padding-top: rem(81);
+    padding-bottom: rem(81);
+  }
+
+  &__block {
+    max-width: rem(846);
+    min-width: rem(846);
+  }
+
+  &__img {
+    max-width: rem(358);
+    max-height: rem(232);
+  }
+
+  &__head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(40) rem(60) rem(40) 0px;
+  }
+
+  &__inner {
+    padding: 0 rem(60) rem(40);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include flex-gap(10px, false);
+    margin-bottom: rem(40);
+
+    &--counter {
+      counter-reset: section;
+    }
+  }
+
+  &__list-item {
+    min-width: 50%;
+
+    &--counter {
+      &::before {
+        counter-increment: section;
+        content: counter(section) '.';
+        padding-right: 5px;
+      }
+    }
+
+    &--bike {
+      &::before {
+        content: url('../img/bike.svg');
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(20);
+  }
+
+  &__subtitle {
+    margin-bottom: rem(20);
+
+    &--topline {
+      padding-top: rem(40);
+      border-top: 1px solid $darkGrey;
+    }
+  }
+
+  &__form {
+    display: flex;
+    @include flex-gap(24px);
+    padding-bottom: 40px;
+  }
+
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__main-info {
+    min-width: rem(425);
+    max-width: 50%;
+  }
+}
+
+@media (max-width:$tablet) {
+  .bikes-feature {
+    &__block {
+      min-width: 100%;
+    }
+
+    &__img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    &__head {
+      flex-direction: column;
+      @include flex-gap(20px, false);
+      padding: rem(20);
+    }
+
+    &__inner {
+      padding: rem(20);
+    }
+
+    &__main-info {
+      min-width: 100%;
+    }
+
+    &__form {
+      flex-direction: column;
+      @include flex-gap(15px, false);
+      padding-bottom: 30px;
+    }
+
+    &__subtitle {
+      &--topline {
+        padding-top: rem(30);
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.form {
+
+  &__input {
+    background-color: $whiteColor;
+    border: 1px solid $darkGrey;
+    @include br16;
+    font-weight: 400;
+    color: $mainColor;
+    min-width: rem(351);
+    min-height: rem(52);
+    padding-left: 16px;
+    outline: $fioletColor;
+
+    &::placeholder {
+      color: $darkGrey;
+    }
+
+    &:focus {
+      border: 1px solid $fioletColor;
+    }
+
+    @media (max-width:$mobileSmall) {
+      min-width: auto;
+    }
+  }
+}

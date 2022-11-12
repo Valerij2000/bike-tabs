@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <title>Bikes</title>
+</head>
+
+<body>
+  <main class="main">
+    <section class="bikes-feature">
+      <h1 class="visually-hidden">Сайт велосипедов</h1>
+      <div class="container">
+        <div class="bikes-feature__container">
+          <div data-tabs="992" class="bikes-feature__block tabs">
+            <nav data-tabs-titles class="tabs__navigation">
+              <button type="submit" class="tabs__title h2 _tab-active">Горный велосипед</button>
+              <button type="submit" class="tabs__title h2">Женский велосипед</button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="bikes-feature__head">
+                  <picture>
+                    <source media="(max-width: 992px)" srcset="./img/bike-sm.png">
+                    <img class="bikes-feature__img img" src="./img/bike.png" alt="Велосипед мужской">
+                  </picture>
+                  <section class="bikes-feature__main-info">
+                    <h2 class="bikes-feature__title h1">Велосипед STELS Navigator 510&nbsp;HD 26 2022</h2>
+                    <p class="bikes-feature__description text">
+                      Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой
+                      размер рамы расчитан
+                      на рост от 135 до 165 см.
+                    </p>
+                    <p class="bikes-feature__description text">
+                      Суммарный вес велосипеда был снижен до <span class="nowrap">16,9 кг,</span> так как рама была
+                      изготовлена с учетом
+                      использования
+                      велосипеда
+                      подростками.
+                    </p>
+                  </section>
+                </div>
+                <section class="bikes-feature__inner">
+                  <h3 class="bikes-feature__subtitle bikes-feature__subtitle--topline h3">Характеристики</h3>
+                  <ul class="bikes-feature__list bikes-feature__list--counter" id="bike-men">
+                    <li class="bikes-feature__list-item bikes-feature__list-item--counter text">
+                      Двойной обод
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--counter text">
+                      Алюминиевый сплав
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--counter text">
+                      Колеса диаметром 26 дюймов
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--counter text">
+                      Покрышки 26х1,95"
+                    </li>
+                  </ul>
+                  <h3 class="bikes-feature__subtitle h3">Добавить характеристику</h3>
+                  <form action="#" method="POST" class="form bikes-feature__form" data-form="men-feature">
+                    <input type="text" name="feature" class="form__input text fw" placeholder="Алюминиевый сплав">
+                    <button class="button text fw">Добавить</button>
+                  </form>
+                  <div class="widget">
+                    <div class="widget__wrapper">
+                      <button class="widget__button button">Окей</button>
+                      <span class="text">Отмена</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tabs__body">
+                <div class="bikes-feature__head">
+                  <picture>
+                    <source media="(max-width: 992px)" srcset="./img/bike-women-sm.png">
+                    <img class="bikes-feature__img img" src="./img/bike-women.png" alt="Велосипед мужской">
+                  </picture>
+                  <section class="bikes-feature__main-info">
+                    <h2 class="bikes-feature__title h1">Велосипед SCHWINN Traveler women 2022</h2>
+                    <p class="bikes-feature__description text">
+                      Женский велосипед со&nbsp;стальной рамой Classic step-true lightweight позволяет девушкам без
+                      проблем его перемещать.
+                    </p>
+                    <p class="bikes-feature__description text">
+                      На&nbsp;данном велосипеде имеется 7&nbsp;скоростей с&nbsp;переключателями от&nbsp;Shimano,
+                      а&nbsp;жесткая вилка
+                      обеспечивает отличную управляемость. Подходит для катания по&nbsp;асфальтированным поверхностям.
+                    </p>
+                  </section>
+                </div>
+                <section class="bikes-feature__inner">
+                  <h3 class="bikes-feature__subtitle bikes-feature__subtitle--topline h3">Характеристики</h3>
+                  <ul class="bikes-feature__list bikes-feature__list--bike" id="bike-women">
+                    <li class="bikes-feature__list-item bikes-feature__list-item--bike text">
+                      Стальная рама
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--bike text">
+                      Колеса диаметром 24 дюймов
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--bike text">
+                      Жесткая вилка
+                    </li>
+                    <li class="bikes-feature__list-item bikes-feature__list-item--bike text">
+                      7 скоростей
+                    </li>
+                  </ul>
+                  <h3 class="bikes-feature__subtitle h3">Добавить характеристику</h3>
+                  <form action="#" method="POST" class="form bikes-feature__form" data-form="women-feature">
+                    <input type="text" name="feature" class="form__input text fw" placeholder="Алюминиевый сплав">
+                    <button class="button text fw">Добавить</button>
+                  </form>
+                  <div class="widget">
+                    <div class="widget__wrapper">
+                      <button class="widget__button button">Окей</button>
+                      <span class="text">Отмена</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
